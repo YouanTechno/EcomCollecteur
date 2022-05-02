@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Creation">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/centre_background"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ScrollView
+                android:id="@+id/scroleforme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textcreation"
+                android:foregroundGravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/centre_background"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:text="Création de compte"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:id="@+id/textcreation"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/textcreation">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardprincipale"
+                        style="@style/centreLocatorCardDesign"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:focusableInTouchMode="false"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/nom"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Nom"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/prenom"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Prénom"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/contact"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Contact"
+                                    android:inputType="phone"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:orientation="horizontal">-->
+
+                            <!--                                <EditText-->
+                            <!--                                    android:id="@+id/nationalite"-->
+                            <!--                                    style="@style/modifiedEditText"-->
+                            <!--                                    android:hint="Nationalité"-->
+                            <!--                                    android:singleLine="true"-->
+                            <!--                                    android:textColor="@color/black" />-->
+                            <!--                                <EditText-->
+
+                            <!--                                    android:id="@+id/nationalite2"-->
+                            <!--                                    style="@style/modifiedEditText"-->
+                            <!--                                    android:hint="Nationalité"-->
+                            <!--                                    android:singleLine="true"-->
+                            <!--                                    android:layout_marginRight="30dp"-->
+                            <!--                                    android:textColor="@color/black" />-->
+
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/cni"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Numéro CNI"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content">-->
+
+                            <!--                                <EditText-->
+                            <!--                                    android:id="@+id/active"-->
+                            <!--                                    style="@style/modifiedEditText"-->
+                            <!--                                    android:hint="Activité"-->
+                            <!--                                    android:singleLine="true"-->
+                            <!--                                    android:textColor="@color/black" />-->
+
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content">-->
+
+                            <!--                                <EditText-->
+                            <!--                                    android:id="@+id/taxe"-->
+                            <!--                                    style="@style/modifiedEditText"-->
+                            <!--                                    android:hint="Taxe"-->
+                            <!--                                    android:singleLine="true"-->
+                            <!--                                    android:textColor="@color/black" />-->
+
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/login"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Login"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/pasword"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Mot de passe"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/paswordconfirm"
+                                    style="@style/modifiedEditText"
+                                    android:hint="Mot de passe"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center"
+                                    android:text="Nationalité : "
+                                    android:textColor="@color/black" />
+
+                                <Spinner
+                                    android:id="@+id/nationaliteListe"
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/enregistre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SUIVANT"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+
+
+            </RelativeLayout>
+            </ScrollView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
